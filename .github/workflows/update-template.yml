@@ -23,6 +23,7 @@ on:
   workflow_dispatch:
 jobs:
   release:
+    if: ${{ false }} # disabled to preserve custom branding/content
     name: Build
     runs-on: ubuntu-latest
     steps:

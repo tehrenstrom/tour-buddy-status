@@ -23,6 +23,7 @@ on:
   workflow_dispatch:
 jobs:
   release:
+    if: ${{ false }} # disable auto-regenerating README with template badges
     name: Generate README
     runs-on: ubuntu-latest
     steps:
